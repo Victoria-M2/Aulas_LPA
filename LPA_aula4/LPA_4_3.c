@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#include <stdio.h>
+
 int main(void){
     float nota = 0;
     float soma = 0;
@@ -11,8 +13,12 @@ int main(void){
         //solicita a nota
         printf("Insira sua nota: ");
         scanf("%f",&nota);
+        
+        if (nota != -1){
         soma = soma + nota;
         ct = ct + 1;
+        }
+        
     }while(nota >= 0);
 
     //calcula a media
