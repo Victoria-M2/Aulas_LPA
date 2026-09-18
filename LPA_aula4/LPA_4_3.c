@@ -7,17 +7,13 @@ int main(void){
     float media = 0;
 
 
-    do{
+    while(nota >= 0){
         //solicita a nota
         printf("Insira sua nota: ");
         scanf("%f",&nota);
-        
-        if (nota != -1){
         soma = soma + nota;
         ct = ct + 1;
-        }
-        
-    }while(nota >= 0);
+    }
 
     //calcula a media
     media = soma/ct;
